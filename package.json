@@ -1,9 +1,9 @@
 {
-  "name": "react-native-js-tableview",
-  "version": "2.5.0",
+  "name": "@yuhao1118/react-native-js-tableview",
+  "version": "2.5.1",
   "description": "A JavaScript implementation for TableView that looks great on both iOS and Android.",
   "main": "index.js",
-  "author": "Haytham KATBY <mohakapt@gmail.com>",
+  "author": "Yuhao1118 <yuhao_li@hotmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mohakapt/react-native-js-tableview"
+    "url": "https://github.com/yuhao1118/react-native-js-tableview"
   },
   "bugs": {
-    "url": "https://github.com/mohakapt/react-native-js-tableview/issues"
+    "url": "https://github.com/yuhao1118/react-native-js-tableview/issues"
   },
   "dependencies": {
     "chroma-js": "^2.*",
