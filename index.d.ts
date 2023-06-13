@@ -85,7 +85,7 @@ export interface StaticCellProps extends AccessoryCellProps {
 	subtitle?: string,
 	subtitleStyle?: TextStyle,
 	contentComponent?: React.ReactNode,
-
+	iconStyle?: ViewStyle,
 	iconComponent?: React.ReactNode,
 }
 
@@ -123,7 +123,7 @@ export interface SwitchCellProps extends AccessoryCellProps {
 	titleStyle?: TextStyle,
 	value?: boolean,
 	onSwitch?: () => void,
-
+	iconStyle?: ViewStyle,
 	iconComponent?: React.ReactNode,
 }
 
