@@ -1,6 +1,6 @@
 {
   "name": "@yuhao1118/react-native-js-tableview",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "description": "A JavaScript implementation for TableView that looks great on both iOS and Android.",
   "main": "index.js",
   "author": "Yuhao1118 <yuhao_li@hotmail.com>",
