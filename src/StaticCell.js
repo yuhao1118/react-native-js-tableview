@@ -16,7 +16,7 @@ class StaticCell extends Component {
 		subtitle: PropTypes.string,
 		subtitleStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 		contentComponent: PropTypes.node,
-
+		iconStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 		iconComponent: PropTypes.element,
 	}, AccessoryCell.propTypes);
 
@@ -27,7 +27,7 @@ class StaticCell extends Component {
 			title, titleStyle,
 			subtitle, subtitleStyle,
 			iconComponent, contentComponent,
-
+			iconStyle,
 			...remainingProps
 		} = this.props;
 		const { colorPalette } = this.context;
@@ -36,7 +36,7 @@ class StaticCell extends Component {
 		const renderIcon = () => {
 			if (iconComponent) {
 				return (
-					<View style={styles.iconContainer}>
+					<View style={[styles.iconContainer, iconStyle]}>
 						{iconComponent}
 					</View>
 				);

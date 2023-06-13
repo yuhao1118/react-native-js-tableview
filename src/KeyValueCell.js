@@ -16,7 +16,7 @@ class KeyValueCell extends Component {
 		value: PropTypes.string,
 		valueStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 		contentComponent: PropTypes.node,
-
+		iconStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 		iconComponent: PropTypes.element,
 	}, AccessoryCell.propTypes);
 
@@ -27,6 +27,7 @@ class KeyValueCell extends Component {
 			title, titleStyle,
 			value, valueStyle,
 			iconComponent,
+			iconStyle,
 			contentComponent,
 
 			...remainingProps
@@ -37,7 +38,7 @@ class KeyValueCell extends Component {
 		const getIcon = () => {
 			if (iconComponent) {
 				return (
-					<View style={styles.iconContainer}>
+					<View style={[styles.iconContainer, iconStyle]}>
 						{iconComponent}
 					</View>
 				);
